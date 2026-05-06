@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR-Auto - Регистрация</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex items-center justify-center" style="background-color: #F0F2FF;">
+    <div class="fixed top-0 left-0 w-full" style="height: 180px; background-color: #7E22CE;"></div>
+
+    <div class="relative bg-white shadow-2xl" style="width: 460px; margin-top: -40px;">
+        <div
+            style="background-color: #7E22CE; height: 100px; display: flex; align-items: center; justify-content: center;">
+            <h1 style="font-size: 28px; font-weight: bold; color: white;">Создание аккаунта</h1>
+        </div>
+
+        <div class="p-8">
+            <div class="mb-3">
+                <label
+                    style="font-size: 10px; font-weight: bold; color: #2D2A61; display: block; margin-bottom: 3px;">Полное
+                    имя</label>
+                <input type="text" value="Иванов Иван Иванович"
+                    style="width: 100%; padding: 8px; border: 1px solid #D1D5DB; background-color: #F8F9FF; color: #6C758D; font-size: 10.5px; box-sizing: border-box;">
+            </div>
+
+            <div class="mb-3">
+                <label
+                    style="font-size: 10px; font-weight: bold; color: #2D2A61; display: block; margin-bottom: 3px;">Email</label>
+                <input type="email" value="ivanov@example.com"
+                    style="width: 100%; padding: 8px; border: 1px solid #D1D5DB; background-color: #F8F9FF; color: #6C758D; font-size: 10.5px; box-sizing: border-box;">
+            </div>
+
+            <div class="mb-3">
+                <label
+                    style="font-size: 10px; font-weight: bold; color: #2D2A61; display: block; margin-bottom: 3px;">Логин</label>
+                <input type="text"
+                    style="width: 100%; padding: 8px; border: 1px solid #D1D5DB; background-color: #F8F9FF; font-size: 10.5px; box-sizing: border-box;"
+                    placeholder="Введите логин">
+            </div>
+
+            <div class="mb-3">
+                <label
+                    style="font-size: 10px; font-weight: bold; color: #2D2A61; display: block; margin-bottom: 3px;">Пароль</label>
+                <input type="password"
+                    style="width: 100%; padding: 8px; border: 1px solid #D1D5DB; background-color: #F8F9FF; font-size: 10.5px; box-sizing: border-box;"
+                    placeholder="Введите пароль">
+            </div>
+
+            <div class="mb-4">
+                <label
+                    style="font-size: 10px; font-weight: bold; color: #2D2A61; display: block; margin-bottom: 3px;">Роль</label>
+                <select
+                    style="width: 100%; padding: 8px; border: 1px solid #D1D5DB; background-color: #F8F9FF; font-size: 10.5px; box-sizing: border-box;">
+                    <option>Сотрудник</option>
+                    <option>Кадровик</option>
+                    <option>Бухгалтер</option>
+                    <option>Администратор</option>
+                </select>
+            </div>
+
+            <button
+                style="width: 100%; padding: 12px; background-color: #7E22CE; color: white; border: none; font-size: 10px; font-weight: bold; cursor: pointer;"
+                onmouseover="this.style.backgroundColor='#6B1FA9'" onmouseout="this.style.backgroundColor='#7E22CE'">
+                Зарегистрироваться
+            </button>
+
+            <div style="text-align: center; margin-top: 15px;">
+                <a href="1.txt" style="color: #7E22CE; font-size: 9px; text-decoration: none;">← Вернуться ко входу</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

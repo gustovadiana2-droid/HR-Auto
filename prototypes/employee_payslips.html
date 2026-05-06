@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR-Auto - Расчетные листки</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #F0F2FF;
+            margin: 0;
+        }
+
+        th {
+            background: #F8F9FF;
+            color: #2D2A61;
+            font-weight: bold;
+            font-size: 9.5px;
+            height: 40px;
+            text-align: left;
+            padding: 0 15px;
+        }
+
+        td {
+            font-size: 10.5px;
+            color: #2D2A61;
+            height: 45px;
+            padding: 0 15px;
+        }
+
+        tr:nth-child(even) td {
+            background: #FCFCFF;
+        }
+
+        tr:nth-child(odd) td {
+            background: white;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="background: white; height: 65px; display: flex; align-items: center; padding: 0 25px;">
+        <span style="font-size: 18px; font-weight: bold; color: #7E22CE;">⚡ HR-Auto</span>
+        <div style="margin-left: 200px; display: flex; gap: 20px;">
+            <button style="background: white; border: none; color: #6C758D; font-size: 10px; cursor: pointer;"
+                onclick="window.location.href='5.txt'">Главная</button>
+            <button
+                style="background: white; border: none; color: #7E22CE; font-weight: bold; font-size: 10px; cursor: pointer;">Расчетные
+                листки</button>
+            <button
+                style="background: white; border: none; color: #6C758D; font-size: 10px; cursor: pointer;">Справки</button>
+        </div>
+        <span style="margin-left: auto; margin-right: 10px; font-size: 9.5px; color: #2D2A61;">👤 Козлова Е.Д.</span>
+        <button
+            style="background: #F8D7DA; color: #DC3545; border: none; padding: 5px 20px; font-size: 10px; font-weight: bold; cursor: pointer;"
+            onclick="window.location.href='1.txt'">Выход</button>
+    </header>
+
+    <div style="max-width: 1100px; margin: 0 auto; padding: 25px;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div>
+                <h1 style="font-size: 20px; font-weight: bold; color: #2D2A61; margin: 0;">Мои расчетные листки</h1>
+                <p style="color: #6C758D; font-size: 11px; margin: 5px 0 0 0;">Просмотр и скачивание расчетных листков
+                </p>
+            </div>
+            <select style="padding: 8px 15px; border: 1px solid #D1D5DB; font-size: 10px;">
+                <option>2024</option>
+                <option>2025</option>
+                <option selected>2026</option>
+            </select>
+        </div>
+
+        <table style="width: 100%; border: none;">
+            <thead>
+                <tr>
+                    <th>ПЕРИОД</th>
+                    <th>НАЧИСЛЕНО</th>
+                    <th>УДЕРЖАНО</th>
+                    <th>К ВЫПЛАТЕ</th>
+                    <th>СТАТУС</th>
+                    <th>ДЕЙСТВИЯ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Апрель 2026</td>
+                    <td>65 432 ₽</td>
+                    <td>8 506 ₽</td>
+                    <td>56 926 ₽</td>
+                    <td>Подтвержден</td>
+                    <td>📥 Скачать</td>
+                </tr>
+                <tr>
+                    <td>Март 2026</td>
+                    <td>62 150 ₽</td>
+                    <td>8 080 ₽</td>
+                    <td>54 070 ₽</td>
+                    <td>Отправлен</td>
+                    <td>📥 Скачать</td>
+                </tr>
+                <tr>
+                    <td>Февраль 2026</td>
+                    <td>58 900 ₽</td>
+                    <td>7 657 ₽</td>
+                    <td>51 243 ₽</td>
+                    <td>Подтвержден</td>
+                    <td>📥 Скачать</td>
+                </tr>
+                <tr>
+                    <td>Январь 2026</td>
+                    <td>65 000 ₽</td>
+                    <td>8 450 ₽</td>
+                    <td>56 550 ₽</td>
+                    <td>Подтвержден</td>
+                    <td>📥 Скачать</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="margin-top: 15px; padding: 10px 15px; background: #E8F4FD;">
+            <p style="color: #0C5460; font-size: 9px; margin: 0;">📋 Для подтверждения ознакомления с расчетным листком
+                нажмите кнопку "Подтвердить" в строке листка</p>
+        </div>
+    </div>
+</body>
+
+</html>

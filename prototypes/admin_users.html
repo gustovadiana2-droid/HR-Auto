@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR-Auto - Управление пользователями</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #F0F2FF;
+            margin: 0;
+        }
+
+        th {
+            background: #F8F9FF;
+            color: #2D2A61;
+            font-weight: bold;
+            font-size: 9.5px;
+            height: 40px;
+            text-align: left;
+            padding: 0 15px;
+        }
+
+        td {
+            font-size: 10px;
+            color: #2D2A61;
+            height: 42px;
+            padding: 0 15px;
+        }
+
+        tr:nth-child(even) td {
+            background: #FCFCFF;
+        }
+
+        tr:nth-child(odd) td {
+            background: white;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="background: white; height: 65px; display: flex; align-items: center; padding: 0 25px;">
+        <span style="font-size: 18px; font-weight: bold; color: #7E22CE;">⚡ HR-Auto</span>
+        <div style="margin-left: 200px; display: flex; gap: 15px;">
+            <button style="background: white; border: none; color: #6C758D; font-size: 10px; cursor: pointer;"
+                onclick="window.location.href='3.txt'">Главная</button>
+            <button
+                style="background: white; border: none; color: #7E22CE; font-weight: bold; font-size: 10px; cursor: pointer;">Пользователи</button>
+            <button
+                style="background: white; border: none; color: #6C758D; font-size: 10px; cursor: pointer;">Настройки</button>
+            <button
+                style="background: white; border: none; color: #6C758D; font-size: 10px; cursor: pointer;">Отчеты</button>
+        </div>
+        <span style="margin-left: auto; margin-right: 10px; font-size: 9.5px; color: #2D2A61;">👤 Администратор</span>
+        <button
+            style="background: #F8D7DA; color: #DC3545; border: none; padding: 5px 20px; font-size: 10px; font-weight: bold; cursor: pointer;"
+            onclick="window.location.href='1.txt'">Выход</button>
+    </header>
+
+    <div style="max-width: 1100px; margin: 0 auto; padding: 25px;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 15px;">
+            <div>
+                <h1 style="font-size: 20px; font-weight: bold; color: #2D2A61; margin: 0;">Управление пользователями
+                </h1>
+                <p style="color: #6C758D; font-size: 11px; margin: 5px 0 0 0;">Просмотр и редактирование учетных записей
+                </p>
+            </div>
+            <button
+                style="padding: 10px 20px; background: #7E22CE; color: white; border: none; font-size: 10px; font-weight: bold; cursor: pointer;"
+                onclick="window.location.href='2.txt'">
+                + Добавить пользователя
+            </button>
+        </div>
+
+        <table style="width: 100%; border: none;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>ФИО</th>
+                    <th>ЛОГИН</th>
+                    <th>РОЛЬ</th>
+                    <th>СТАТУС</th>
+                    <th>ДЕЙСТВИЯ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Иванов Иван Иванович</td>
+                    <td>ivanov</td>
+                    <td>Администратор</td>
+                    <td>🟢 Активен</td>
+                    <td>✏️ 🗑️</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Петрова Мария Сергеевна</td>
+                    <td>petrova</td>
+                    <td>Кадровик</td>
+                    <td>🟢 Активен</td>
+                    <td>✏️ 🗑️</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Сидоров Алексей Викторович</td>
+                    <td>sidorov</td>
+                    <td>Бухгалтер</td>
+                    <td>🔴 Заблокирован</td>
+                    <td>✏️ 🗑️</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Козлова Екатерина Дмитриевна</td>
+                    <td>kozlova</td>
+                    <td>Сотрудник</td>
+                    <td>🟢 Активен</td>
+                    <td>✏️ 🗑️</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="margin-top: 15px; padding: 10px 15px; background: #E8F4FD;">
+            <p style="color: #0C5460; font-size: 9px; margin: 0;">📊 База данных: HR-Auto | Последнее резервное
+                копирование: 27.04.2026 23:00</p>
+        </div>
+    </div>
+</body>
+
+</html>
